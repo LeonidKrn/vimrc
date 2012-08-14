@@ -1,3 +1,12 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = git://github.com/sjl/gundo.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/bufexplorer"]
+	path = bundle/bufexplorer
+	url = git://github.com/firat/vim-bufexplorer.git
