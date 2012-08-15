@@ -21,6 +21,11 @@ set ttymouse=xterm2
 set autoindent
 set smartindent
 
+filetype on       
+filetype indent on
+filetype plugin on
+compiler ruby     
+
 noremap  <Up> ""
 noremap! <Up> <Esc>
 noremap  <Down> ""
