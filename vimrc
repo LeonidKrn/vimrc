@@ -18,6 +18,8 @@ set guioptions-=T
 
 set mouse=a
 set ttymouse=xterm2
+set autoindent
+set smartindent
 
 noremap  <Up> ""
 noremap! <Up> <Esc>
@@ -32,13 +34,6 @@ silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 silent! nmap <silent> <F4> :GundoToggle<CR>
 nnoremap <leader>b :BufExplorer<cr>
 
-set nu
-set sw=2
-set sts=2
-let g:fuzzy_ignore = "gems/*"
-set guifont =\ Monospace\ Bold\ 10
-set noerrorbells visualbell t_vb=
-autocmd GUIEnter * set visualbell t_vb=
 if has("gui_running")
     "tell the term has 256 colors
     set t_Co=256
@@ -66,3 +61,10 @@ else
     endif
 endif
 
+set nu
+set sw=2
+set sts=2
+let g:fuzzy_ignore = "gems/*"
+set guifont =\ Monospace\ Bold\ 10
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
