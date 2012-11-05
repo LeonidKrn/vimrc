@@ -34,6 +34,7 @@ noremap  <Left> ""
 noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
+imap <c-l> <space>=><space>
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 silent! nmap <silent> <F4> :GundoToggle<CR>
@@ -65,6 +66,12 @@ else
         colorscheme default
     endif
 endif
+augroup vimrcEx
+  autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\   exe "normal g`\"" |
+	\ endif
+augroup END
 
 set nu
 set sw=2
