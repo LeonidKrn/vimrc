@@ -52,7 +52,7 @@ if has("gui_running")
     if has("gui_gnome")
         set term=gnome-256color
         colorscheme railscasts
-        set guifont=Monospace\ Bold\ 12
+        set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 10
     endif
 else
     "dont load csapprox if there is no gui support - silences an annoying warning
@@ -76,7 +76,8 @@ augroup END
 set nu
 set sw=2
 set sts=2
+set expandtab
 let g:fuzzy_ignore = "gems/*"
-set guifont =\ Monospace\ Bold\ 10
+set guifont=Bitstream\ Vera\ Sans\ Mono\ Bold\ 10
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
