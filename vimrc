@@ -21,6 +21,8 @@ set ttymouse=xterm2
 set autoindent
 set smartindent
 
+set wildignore='coverage/**/*;StartMeetingWeb/**/*'
+
 filetype on       
 filetype indent on
 filetype plugin on
@@ -35,6 +37,7 @@ noremap! <Left> <Esc>
 noremap  <Right> ""
 noremap! <Right> <Esc>
 imap <c-l> <space>=><space>
+imap <c-p> require 'pry'<CR>binding.pry<CR> 
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 silent! nmap <silent> <F4> :GundoToggle<CR>
