@@ -21,7 +21,7 @@ set ttymouse=xterm2
 set autoindent
 set smartindent
 
-set wildignore='coverage/**/*;StartMeetingWeb/**/*'
+set wildignore+=coverage/**,StartMeetingWeb/**
 
 filetype on       
 filetype indent on
